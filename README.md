@@ -1,23 +1,11 @@
 # Entity Extractor By Binary Tagging
 
-**公众号文章：[基于首尾标注的实体抽取开源工具](https://mp.weixin.qq.com/s/xVRKN7lwM3wVDrI3hR9X9A)**    
-
-“半指针-半标注”方法实体的抽取器，基于苏神的[三元组抽取](https://kexue.fm/archives/7161)方法改造，这里取消了三元组抽取模型中对s的抽取，直接抽取实体并做分类(相当于直接抽取p和o)。改造后的实体抽取方法不仅可以运用于短实体的抽取，也可以运用到长句实体的抽取。
-
 ## 环境
-* python 3.6.7
+* python 3.7.1
 * transformers==3.0.2
 * torch==1.6.0
 
 其他环境见requirements.txt
-
-
-## 更新历史
-日期|版本|描述
-:---|:---|---
-2020-08-23|v1.0.0|初始仓库
-2020-12-05|v1.1.0|代码结构调整
-2021-07-08|v2.0.0|修改成Bert微调的模型
 
 ## 原理
 
@@ -97,9 +85,4 @@ mode=interactive_predict
 * [用bert4keras做三元组抽取](https://kexue.fm/archives/7161)
 * [A Novel Cascade Binary Tagging Framework for Relational Triple Extraction](https://arxiv.org/abs/1909.03227)
 
-## 公众号  
-
-相关问题欢迎在公众号反馈：  
-
-![小贤算法屋](https://img-blog.csdnimg.cn/20210427094903895.jpg)
 
