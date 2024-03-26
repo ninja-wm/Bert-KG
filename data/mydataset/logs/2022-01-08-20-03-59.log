@@ -1,0 +1,27 @@
+2022-01-08 20:03:59
+++++++++++++++++++++++++++++++++++++++++CONFIGURATION SUMMARY++++++++++++++++++++++++++++++++++++++++
+ Status:
+     mode                 : interactive_predict
+ ++++++++++++++++++++++++++++++++++++++++
+ Datasets:
+     datasets         fold: data/mydataset
+     train            file: myData.json
+     validation       file: myData.json
+     test             file: None
+     checkpoints       dir: models/mydataset
+     log               dir: logs
+ ++++++++++++++++++++++++++++++++++++++++
+Labeling Scheme:
+     classnames     scheme: ['父本', '母本', '表型', '环境']
+     decision    threshold: 0.5
+ ++++++++++++++++++++++++++++++++++++++++
+ Training Settings:
+     epoch                : 50
+     batch            size: 32
+     max  sequence  length: 600
+     dropout              : 0.5
+     learning         rate: 5e-05
+     is     early     stop: True
+     patient              : 5
+++++++++++++++++++++++++++++++++++++++++CONFIGURATION SUMMARY END++++++++++++++++++++++++++++++++++++++++
+mode: predict_one
